@@ -1,0 +1,19 @@
+.question {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: #989fce;
+    max-width: 400px;
+}
+
+h1 {
+    color: #347fc4
+}
+
+.choice {
+
+}
+
+.True {
+    background-color: #009c00;
+}
