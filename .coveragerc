@@ -1,0 +1,3 @@
+[run]
+source = trivia
+omit = trivia/test*
