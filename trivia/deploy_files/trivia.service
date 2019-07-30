@@ -1,0 +1,15 @@
+[Unit]
+Description=uWSGI PyPI server instance
+After=syslog.target
+
+[Service]
+ExecStart=/var/www/trivia/venv/bin/uwsgi -H /var/www/trivia/venv --ini-paste /var/www/trivia/trivia/production.ini
+RuntimeDirectory=/var/www/trivia/trivia
+Restart=always
+KillSignal=SIGQUIT
+Type=notify
+StandardError=syslog
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target

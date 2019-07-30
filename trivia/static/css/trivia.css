@@ -17,3 +17,11 @@ h1 {
 .True {
     background-color: #009c00;
 }
+
+#color_pallette {
+    color: #272838;
+    color: #5d536b;
+    color: #7d6b91;
+    color: #989fce;
+    color: #347fc4;
+}
