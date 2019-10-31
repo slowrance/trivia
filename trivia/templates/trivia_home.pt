@@ -7,14 +7,14 @@
             <div tal:repeat="q questions" class="question">
                 <p class="font-bold">
                     ${q.question}
-                    <div tal:define="question_index python:repeat['q'].index">
+                    <div tal:define="question_index python:repeat['q'].index" class="choices">
                         <div tal:repeat="c q.choices" class="choice font-semi-bold">
-                            <input type="radio" name="${python:question_index}" value="${python:c == q.correct_answer}" >
-                            <span tal:attributes="class python:c == q.correct_answer">${c}</span>
+                            <input type="radio" name="${python:question_index}"  >
+                            <span>${c}</span>
 
                         </div>
                     </div>
-                    <button class="btn btn-success">Check Answer</button>
+                    <button class="btn btn-success" name="${q.correct_index}">Check Answer</button>
                 </p>
             </div>
         </div>
